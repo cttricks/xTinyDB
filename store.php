@@ -1,12 +1,10 @@
 <?php
 /*Store - Update Data*/
 include "info.php";
-header("HTTP/1.0 404 Method not allowed");
-$cResponse = array("status"=>"Failed", "msg"=> "method not allowed");
 
+/*Process request*/
 if($_SERVER["REQUEST_METHOD"] === "POST"){
 	$cResponse["msg"] = "invalid bucket";
-	
 	if(isset($_POST["bucket"]) && $_POST["bucket"] !==""){
 		$cResponse["msg"] = "invalid tag";
 		if(isset($_POST["tag"]) && count(json_decode($_POST["tag"], true))>0){
@@ -16,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 			$value = json_decode($_POST["value"], true);
 			
 			/*chnage bucket path to array*/
-			$bucArr = explode("/", $_POST['bucket']);
+			$bucArr = explode("/", clean($_POST['bucket']));
 			
 			/*Get bucket Locator*/
 			$bucketLocators = array();
@@ -57,6 +55,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 			
 			$i = 0;
 			foreach($tags as $tag){
+				$tag = clean($tag);
 				$bucketData[$tag] = ((count($value) > $i)? $value[$i] : "");
 				$i++;
 			}
