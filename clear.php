@@ -1,9 +1,8 @@
 <?php
-/*Clear tag/bucket*/
+/*Include helpher file*/
 include "info.php";
-header("HTTP/1.0 404 Method not allowed");
-$cResponse = array("status"=>"Failed", "msg"=> "method not allowed");
 
+/*Process request*/
 if($_SERVER["REQUEST_METHOD"] === "GET"){
 	header("HTTP/1.0 404 Invalid request");
 	$cResponse["msg"] = "invalid bucket";
