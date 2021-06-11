@@ -40,7 +40,7 @@
 			<p>Provide the required details to CRUD data using this web tool</p>
 			<div class="inpForm">
 				<div><i class="fa fa-link" aria-hidden="true"></i></div>
-				<input type="text" placeholder="Server URL" id="serverurl" value="<?php echo "http://". $_SERVER['HTTP_HOST'] .$_SERVER['REQUEST_URI'] . "Test1"; ?>"/>
+				<input type="text" placeholder="Server URL" id="serverurl" value=""/>
 			</div>
 			<div class="inpForm">
 				<div><i class="fa fa-archive" aria-hidden="true"></i></div>
