@@ -1,0 +1,104 @@
+.tree {
+	background-color: #fff;
+	height: 55vh;
+	overflow: auto;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.tree ul {
+	margin-left: 30px;
+}
+
+.tree li {
+	list-style-type: none;
+	margin: 10px 10px;
+	position: relative;
+}
+
+.tree li::before {
+	content: "";
+	position: absolute;
+	top: -9px;
+	left: -20px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0 0 0 0px;
+	width: 20px;
+	height: 24px;
+}
+
+.tree li::after {
+	position: absolute;
+	content: "";
+	top: 16px;
+	left: -20px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-radius: 0px 0 0 0;
+	width: 20px;
+	height: 100%;
+}
+
+.rmvExtra:after {
+	border-left: 1px solid #fff !important;
+}
+
+.tree li:last-child::after {
+	display: none;
+}
+
+
+.tree ul li ul li:last-child::after {
+	display: none;
+}
+
+.tree li:last-child:before {
+	border-radius: 0 0 0 3px;
+}
+
+ul.tree > li:first-child::before {
+	display: none;
+}
+
+ul.tree > li:first-child::after {
+	border-radius: 5px 0 0 0;
+}
+
+
+/*custom*/
+.tree li .datacapsule{
+	border: 1px #ddd solid;
+	width: fit-content;
+	display: grid;
+	grid-template-columns: 20px auto auto;
+	padding: 3px 10px 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.tree li .datacapsule i{
+	color: #333;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.tree li .datacapsule div{
+	color: #333;
+	margin: auto;
+}
+
+.tree li .datacapsule .fa-trash-o:hover{
+	cursor: pointer;
+	color: red;
+}
+
+.tree li .datacapsule p{
+	padding: 0px 10px;
+    border-left: 1px solid #ccc;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 350px;
+}

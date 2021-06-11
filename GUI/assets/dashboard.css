@@ -1,0 +1,298 @@
+#logintodb{
+	height: 60vh;
+	margin: 30px 100px 25px 100px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+#logintodb .dburlform{
+	width: 500px;
+}
+
+#logintodb .dburlform h1{
+	font-size: 2rem;
+	color: #333;
+}
+
+#logintodb .dburlform p{
+	font-size: 0.9rem;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+#logintodb .dburlform .btnContainer{
+	margin-top: 20px;
+	text-align: right;
+}
+
+#logintodb .dburlform .btnContainer button {
+    background: #00c875;
+    font-size: .95rem;
+    padding: 8px 15px;
+    border: 1px solid #00c875;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#logintodb .dburlform .inpForm{
+	display: grid;
+	grid-template-columns: 50px auto;
+	margin-top: 8px;
+}
+
+
+#logintodb .dburlform .inpForm div{
+	background-color: #ddd;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	font-size: 1.05rem;
+}
+
+#logintodb .dburlform .inpForm input{
+	font-size: 1rem;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	outline: none;
+}
+
+#mainBodyContainer{
+	height: 60vh;
+	margin: 30px 100px 25px 100px;
+	display: none;
+}
+
+.mbc-head{
+	display: grid;
+	grid-template-columns: auto 155px;
+	color: #333;
+}
+
+.links p i{
+	margin-right: 10px;
+}
+
+.mbc-head .button{
+	display: inline-flex;
+}
+
+.mbc-head .button i{
+	margin: 0px 0px 0px 20px;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.mbc-head .button i.tobebig{
+	font-size: 1.2rem;
+}
+
+.mbc-head .button i.tobebigbtn{
+	font-size: 1.2rem;
+	color: #00c875;
+}
+
+.mbc-head .linksBucket i{
+	margin-right: 8px;
+}
+
+.mbc-head .linksBucket{
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 25px auto;
+}
+
+.mbc-head .linksBucket input{
+	border: none;
+	font-size: .95rem;
+	outline: none;
+}
+
+.bucketContainer{}
+.tagContainer{}
+
+/*popupsContainer*/
+#popupsContainer{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	background: rgba(0, 0, 0, 0.11);
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-content: center;
+	display: none;
+}
+
+#progressBox{
+	text-align: center;
+	background: #fff;
+	padding: 20px;
+	width: 320px;
+	box-shadow: -1px 2px 15px #666;
+	border-radius: 5px;
+	display: none;
+}
+
+#progressBox h3{
+	margin-top: 10px;
+}
+
+#confirmDeletes{
+	width: 320px;
+	display: none;
+}
+
+#confirmDeletes2{
+	width: 320px;
+	display: none;
+}
+
+#errorOccured{
+	width: 320px;
+	display: none;
+}
+
+#errorOccured .topBox, #confirmDeletes .topBox, #confirmDeletes2 .topBox{
+	background-color: #ff5722;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#errorOccured .bodyBox, #confirmDeletes .bodyBox, #confirmDeletes2 .bodyBox{
+	background-color: #fff;
+	color: #333;
+	padding: 20px 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#errorOccured .buttonHolder, #confirmDeletes .buttonHolder, #confirmDeletes2 .buttonHolder{
+	background-color: #fff;
+	color: #333;
+	text-align: center;
+	padding: 30px 20px 0px 20px;
+}
+
+#errorOccured .buttonHolder button, #confirmDeletes .buttonHolder button, #confirmDeletes2 .buttonHolder button{
+	border: 1px solid #ccc;
+	padding: 8px 20px 7px 20px;
+	color: #333;
+	cursor: pointer;
+	border-radius: 4px;
+	background: #fff;
+}
+
+#confirmDeletes .buttonHolder button:nth-child(2){
+	margin-left: 5px;
+}
+
+#confirmDeletes2 .buttonHolder button:nth-child(2){
+	margin-left: 5px;
+}
+
+#storeData{
+	background: #fff;
+	padding: 5px 20px 20px 20px;
+	width: 320px;
+	box-shadow: -1px 2px 15px #666;
+	border-radius: 5px;
+	display: none;
+}
+
+.headMM{
+	display: grid;
+	grid-template-columns: auto 60px;
+}
+
+.headMM div{
+	margin: auto 0px; 
+}
+
+#storeData h2{
+/*	margin-bottom: 5px;*/
+}
+
+#storeData h4{
+	margin-top: 15px;
+	color: #333;
+}
+
+#storeData h4:nth-child(2){
+	margin-top: 8px;
+}
+
+#storeData input, #bvalue{
+	background: #fff;
+	color: #525865;
+	border-radius: 4px;
+	border: 1px solid #d1d1d1;
+	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.1);
+	font-family: inherit;
+	font-size: 1em;
+	line-height: 1.45;
+	outline: none;
+	padding: 5px 10px;
+	min-width: 295px;
+	max-width: 295px;
+	margin-top: 8px;
+}
+
+#bvalue{
+	height: 100px;
+	min-height: 100px;
+}
+
+#storeData ul{
+	list-style: none;
+	display: inline-flex;
+	margin-top: 25px;
+}
+
+#storeData ul li{
+	border: 1px solid #ccc;
+	padding: 3px 10px 5px 10px;
+	margin-right: 5px;
+	color: #333;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+#storeData ul li:nth-child(2){
+	border: 1px solid #00c875;
+	background-color: #00c875;
+	color: #fff;
+}
+
+
+#copyinput{
+	font-size: 1px;
+	color: transparent;
+	border: none;
+	height: 1px;
+	width: 1px;
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
