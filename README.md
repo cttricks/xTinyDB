@@ -36,7 +36,7 @@ Done, now simply open xTinyDB 'index.php' in new tab. ( Example: https://yourdom
 ## Important Links
 - Extension for appinventor and distributions.
 - Tutorial Video On YouTube
-- [Demo Dashboard](https://cttricks.com/)
+- [Demo Dashboard](https://cttricks.com/xTinyDB)
 
 Note that, I made this just for the experiment. It is not a complete database solution. But yeah! Anyone can use this in their small project or say test projects at their own risk. Also, if you want to do any modification in codes of server or client-side GUI. Feel free to do it and give your contribution to make it more stable and useful. And if you have any queries, feel free to contact me on Twitter or Instagram.
 
