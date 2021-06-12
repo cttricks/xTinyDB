@@ -1,6 +1,6 @@
 <?php
 /*Include helpher file*/
-include "info.php";
+include "dbInfo.php";
 
 /*Process request*/
 if($_SERVER["REQUEST_METHOD"] === "GET"){
