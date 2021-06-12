@@ -1,6 +1,6 @@
 <?php
 /*Store - Update Data*/
-include "info.php";
+include "dbInfo.php";
 
 /*Process request*/
 if($_SERVER["REQUEST_METHOD"] === "POST"){
