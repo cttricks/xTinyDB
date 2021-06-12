@@ -187,12 +187,12 @@ function connectDB() {
 	/*label url*/
 	document.getElementById("serverurllabel").innerHTML = url;
 	/*server Request*/
-	var url = url + "/get.php?bucket=" + bucket;
+	var url = url + "/getValue.php";
 	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", url, true);
+	xhttp.open("POST", url, true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.setRequestHeader("Authorization", "Basic " + accessKey);
-	xhttp.send();
+	xhttp.send("bucket=" + bucket);
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4) {
 			hideProgress();
@@ -265,7 +265,7 @@ function storeData() {
 	if (bucket !== "" && tag !== "") {
 		tag = '["' + tag + '"]';
 		value = '["' + value.replace(/\n/g, ' ') + '"]';
-		var url = document.getElementById("serverurl").value + "/store.php";
+		var url = document.getElementById("serverurl").value + "/storeValue.php";
 		var xhttp = new XMLHttpRequest();
 		xhttp.open("POST", url, true);
 		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -348,12 +348,12 @@ function clearTag(e) {
 	var accessKey = document.getElementById("accesskey").value;
 
 	/*server Request*/
-	var url = url + "/clear.php?bucket=" + bucket + "&tag=" + tag;
+	var url = url + "/clearValue.php";
 	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", url, true);
+	xhttp.open("POST", url, true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.setRequestHeader("Authorization", "Basic " + accessKey);
-	xhttp.send();
+	xhttp.send("bucket=" + bucket + "&tag=" + tag);
 	/*process response*/
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4) {
@@ -382,12 +382,12 @@ function removeBucket() {
 
 	var accessKey = document.getElementById("accesskey").value;
 	/*server Request*/
-	var url = url + "/clear.php?bucket=" + bucket;
+	var url = url + "/clearValue.php";
 	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", url, true);
+	xhttp.open("POST", url, true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.setRequestHeader("Authorization", "Basic " + accessKey);
-	xhttp.send();
+	xhttp.send("bucket=" + bucket);
 	/*process response*/
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4) {
