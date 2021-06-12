@@ -33,7 +33,7 @@ We have GUI and Vendor files to host on the server. Let's first set up the vendo
 key to make secure calls from the client side.
 ```php
 $xTinyDB = array(
-	"storage" => "storage-area"
+	"storage" => "storage-area",
 	"accessKey" => "sampleaccesskey01"
 );
 ```
