@@ -1,24 +1,24 @@
 <?php
 /*Include helpher file*/
-include "dbInfo.php";
+include "dbinfo.php";
 
 /*Process request*/
-if($_SERVER["REQUEST_METHOD"] === "GET"){
+if($_SERVER["REQUEST_METHOD"] === "POST"){
 	header("HTTP/1.0 404 Invalid request");
 	$cResponse["msg"] = "invalid bucket";
 	
-	if(isset($_GET["bucket"]) && $_GET["bucket"] !==""){
-		$parent = str_replace("/","-", $_GET["bucket"]). ".DB";
+	if(isset($_POST["bucket"]) && $_POST["bucket"] !==""){
+		$parent = str_replace("/","-", $_POST["bucket"]). ".DB";
 		$parent = str_replace(".DB", "", str_replace("-.DB", "", $parent));
 		$dir = $xTinyDB["storage"] . "/" . $parent . ".json";
 		if(is_file($dir)){
 			/*if tag is present then remove tag else remove bucket*/
-			if(isset($_GET['tag'])){
+			if(isset($_POST['tag'])){
 				$cResponse["msg"] = "invalid tag(s)";
-				if(count(json_decode($_GET["tag"], true))>0){
+				if(count(json_decode($_POST["tag"], true))>0){
 					header("HTTP/1.0 200 Data Cleared");
 					$cResponse["status"] = "Success";
-					$tags = json_decode($_GET["tag"], true);
+					$tags = json_decode($_POST["tag"], true);
 
 					/*Handel Errors*/
 					$bucketData = json_decode(file_get_contents($dir), true);
