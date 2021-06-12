@@ -1,7 +1,7 @@
 <?php
 /*Secured credentials*/
 $xTinyDB = array(
-	"storage" => "storage-area"
+	"storage" => "storage-area",
 	"accessKey" => "sampleaccesskey01"
 );
 
