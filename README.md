@@ -33,6 +33,19 @@ Click here to download the zip files of xTinyDB GUI or download files of the GIU
 
 Done, now simply open xTinyDB 'index.php' in new tab. ( Example: https://yourdomain.com/xTinyDB/ )
 
+### Control Buttons On GUI
+![image|600x50](https://cttricks.com/xTinyDB/banner3.png)
+1. Add a new tag in the current bucket or in a sub bucket of the current bucket.
+2. Hide/Show tags and values in UI
+3. Hide/Show sub buckets in UI
+4. Refresh current bucket
+5. Copy JSON of the current bucket
+6. Delete/remove/clear the current bucket
+
+![image|300x40](https://cttricks.com/xTinyDB/banner4.png)
+
+Here we have an input field to enter the bucket path to view it. On top of all these, you can also use 'ctrl+b' to move back to the previous bucket.
+
 ## Important Links
 - Extension for appinventor and distributions.
 - Tutorial Video On YouTube
