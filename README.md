@@ -1,4 +1,4 @@
-<h1 align="center" style="border: none !important"><img src="https://cttricks.com/xTinyDB/banner12.png"/> xTinyDB<br></h1>
+<h1 align="center" style="border: none !important"><img src="https://raw.githubusercontent.com/cttricks/xTinyDB/main/GUI/assets/banner1.png"/><br></h1>
 <p align="center">✨ The Open Source TinyWebDB Alternative ✨</p>
 
 <div align="center">
@@ -42,14 +42,14 @@ $xTinyDB = array(
 :warning: Create an index.php file (5th file). Only if the direct access to dir `xTinyDB` is public.
 
 # GUI Setup
-![image|690x252](https://cttricks.com/xTinyDB/banner2.png)
+![image|690x252](https://raw.githubusercontent.com/cttricks/xTinyDB/main/GUI/assets/banner2.png)
 
 Click here to download the zip files of xTinyDB GUI or download files of the GIU section of this git repository. Upload it to the `xTinyDB` directory that we created earlier. 
 
 Done, now simply open xTinyDB `index.php` in new tab. ( Example: https://yourdomain.com/xTinyDB/ )
 
 ## Control Buttons On GUI
-![image|600x50](https://cttricks.com/xTinyDB/banner3.png)
+
 1. Add a new tag in the current bucket or in a sub bucket of the current bucket.
 2. Hide/Show tags and values in UI
 3. Hide/Show sub buckets in UI
@@ -57,7 +57,6 @@ Done, now simply open xTinyDB `index.php` in new tab. ( Example: https://yourdom
 5. Copy JSON of the current bucket
 6. Delete/remove/clear the current bucket
 
-![image|300x40](https://cttricks.com/xTinyDB/banner4.png)
 
 Here we have an input field to enter the bucket path to view it. On top of all these, you can also use `ctrl+b` to move back to the previous bucket.
 
